@@ -1,0 +1,21 @@
+{
+  "name": "redis-node-docker",
+  "version": "0.0.1",
+  "description": "basic express and redis in docker conatiners",
+  "main": "server.js",
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "redis": "^2.6.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "purge": "rm -rf node_modules dist",
+    "clean": "npm run purge && npm install",
+    "redis-shell": "docker exec -ti redisnodedocker_node-redis_1 sh",
+    "up": "docker-compose up --build --remove-orphans",
+    "demaon": "docker-compose up -d --build --remove-orphans",
+    "stop": "docker-compose stop"
+  },
+  "author": "James McAllister",
+  "license": "UNLICENSED"
+}
