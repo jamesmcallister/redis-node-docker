@@ -98,6 +98,10 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@^3.4.7:
+  version "3.4.7"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.7.tgz#f72d760be09b7f76d08ed8fae98b289a8d05fab3"
+
 boom@2.x.x:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -1214,6 +1218,10 @@ tar@~2.2.1:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
+
+then-redis@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/then-redis/-/then-redis-2.0.1.tgz#e797f18fff7f3c50bfc2ae95a35db5ad0b0816ff"
 
 through@2, through@~2.3, through@~2.3.1:
   version "2.3.8"

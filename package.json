@@ -4,6 +4,7 @@
   "description": "basic express and redis in docker conatiners",
   "main": "server.js",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "nodemon": "^1.11.0",
     "redis": "^2.6.3"
   },
@@ -11,7 +12,7 @@
     "start": "nodemon server.js",
     "purge": "rm -rf node_modules dist",
     "clean": "npm run purge && npm install",
-    "redis-shell": "docker exec -ti redisnodedocker_node-redis_1 sh",
+    "redis-shell": "docker exec -ti redisnodedocker_redis_1 sh",
     "up": "docker-compose up --build --remove-orphans",
     "demaon": "docker-compose up -d --build --remove-orphans",
     "stop": "docker-compose stop"

@@ -14,4 +14,4 @@ services:
   redis:
     image: "redis:alpine"
     volumes:
-      - "./data:/var/lib/redis"
+      - "./data:/data"
